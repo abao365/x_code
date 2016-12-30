@@ -11,6 +11,9 @@
 @software: PyCharm Community Edition
 @time: 2016/12/27 下午4:24
 """
+"""
+通过摄像头识别人脸和人眼
+"""
 
 import cv2
 
