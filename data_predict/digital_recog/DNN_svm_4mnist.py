@@ -11,7 +11,10 @@
 @software: PyCharm Community Edition
 @time: 2016/12/30 下午6:59
 """
-
+"""
+未使用TensorFlow
+自己写代码实现CNN及应用
+"""
 import numpy as np
 import random
 import os, struct
