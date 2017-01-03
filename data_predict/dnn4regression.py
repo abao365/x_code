@@ -12,7 +12,9 @@
 @source:http://stackoverflow.com/questions/38399609/tensorflow-deep-neural-network-for-regression-always-predict-same-results-in-one
 
 使用深度学习解决回归问题
-
+两个问题：
+1）如何做优化，降低cost
+2）如何
 """
 
 from __future__ import absolute_import
