@@ -14,7 +14,7 @@
 使用深度学习解决回归问题
 两个问题：
 1）如何做优化，降低cost
-2）如何
+2）如何解决报错问题
 """
 
 from __future__ import absolute_import
