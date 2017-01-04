@@ -99,11 +99,11 @@ biases = {
 pred = multilayer_perceptron(x, weights, biases)
 tf.transpose(pred)
 
-# Define loss and optimizer
+# 定义损失函数及优化
 cost = tf.reduce_mean(tf.square(pred-y))
 optimizer = tf.train.AdamOptimizer(learning_rate=learning_rate).minimize(cost)
 
-# 定义损失函数及优化
+# 模型快跑...
 with tf.Session() as sess:
     sess.run(tf.initialize_all_variables())
 
