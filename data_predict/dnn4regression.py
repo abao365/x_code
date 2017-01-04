@@ -15,7 +15,12 @@
 两个问题：
 1）如何做优化，降低cost
 2）如何解决报错问题
+
+探索DNN在回归问题中的应用
+以boston房屋价格数据为例
+
 """
+
 
 from __future__ import absolute_import
 from __future__ import division
@@ -30,6 +35,7 @@ from sklearn import datasets, linear_model
 from sklearn import cross_validation
 import numpy as np
 
+# 处理数据集，分割为训练集和测试集
 boston = learn.datasets.load_dataset('boston')
 x_all, y_all = boston.data, boston.target
 X_train, X_test, Y_train, Y_test = cross_validation.train_test_split(
@@ -40,7 +46,7 @@ total_len = X_train.shape[0]
 # 全局参数
 learning_rate = 0.001
 training_epochs = 500
-batch_size = 10
+batch_size = 100
 display_step = 1
 dropout_rate = 0.9
 # 网络参数
@@ -51,33 +57,29 @@ n_hidden_4 = 256
 n_input = X_train.shape[1]
 n_classes = 1
 
-# tf Graph input
+# 定义TF网络的占位符，和数据集结构对应
 x = tf.placeholder("float", [None, 13])
 y = tf.placeholder("float", [None])
 
-# Create model
+
+# 定义模型
 def multilayer_perceptron(x, weights, biases):
-    # Hidden layer with RELU activation
+    # 定义4个隐藏层，统一使用relu激励函数
     layer_1 = tf.add(tf.matmul(x, weights['h1']), biases['b1'])
     layer_1 = tf.nn.relu(layer_1)
-
-    # Hidden layer with RELU activation
     layer_2 = tf.add(tf.matmul(layer_1, weights['h2']), biases['b2'])
     layer_2 = tf.nn.relu(layer_2)
-
-    # Hidden layer with RELU activation
     layer_3 = tf.add(tf.matmul(layer_2, weights['h3']), biases['b3'])
     layer_3 = tf.nn.relu(layer_3)
-
-    # Hidden layer with RELU activation
     layer_4 = tf.add(tf.matmul(layer_3, weights['h4']), biases['b4'])
     layer_4 = tf.nn.relu(layer_4)
 
-    # Output layer with linear activation
+    # 输出层使用线性回归，前四层用于构建特征
     out_layer = tf.matmul(layer_4, weights['out']) + biases['out']
+
     return out_layer
 
-# Store layers weight & bias
+#初始化权重和偏置，使用random_normal初始化（按照正态分布初始化权重，自定义的两个参数分别是：正态分布的平均值和正态分布的标准差）
 weights = {
     'h1': tf.Variable(tf.random_normal([n_input, n_hidden_1], 0, 0.1)),
     'h2': tf.Variable(tf.random_normal([n_hidden_1, n_hidden_2], 0, 0.1)),
@@ -93,7 +95,7 @@ biases = {
     'out': tf.Variable(tf.random_normal([n_classes], 0, 0.1))
 }
 
-# Construct model
+# 创建模型
 pred = multilayer_perceptron(x, weights, biases)
 tf.transpose(pred)
 
@@ -101,7 +103,7 @@ tf.transpose(pred)
 cost = tf.reduce_mean(tf.square(pred-y))
 optimizer = tf.train.AdamOptimizer(learning_rate=learning_rate).minimize(cost)
 
-# Launch the graph
+# 定义损失函数及优化
 with tf.Session() as sess:
     sess.run(tf.initialize_all_variables())
 
@@ -135,10 +137,12 @@ with tf.Session() as sess:
 
     print ("Optimization Finished!")
 
-    # Test model
-    correct_prediction = tf.equal(tf.argmax(pred, 1), tf.argmax(y, 1))
-    # Calculate accuracy
-    accuracy = tf.reduce_mean(tf.cast(correct_prediction, "float"))
-    #有错误，暂时不执行
-    # print ("Accuracy:", accuracy.eval({x: X_test, y: Y_test}))
 
+
+    # 测试集测试
+    biases_value = pred - y
+    l1_value =tf.abs(pred - y)
+    biases_value_avg = tf.reduce_mean(tf.cast(biases_value, "float"))
+    l1_value_avg = tf.reduce_mean(tf.cast(l1_value, "float"))
+    print("biases_value_avg:", biases_value_avg.eval({x: X_test, y: Y_test}))
+    print("l1_value_avg:", l1_value_avg.eval({x: X_test, y: Y_test}))
