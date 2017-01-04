@@ -31,21 +31,21 @@ from sklearn import cross_validation
 import numpy as np
 
 boston = learn.datasets.load_dataset('boston')
-x, y = boston.data, boston.target
+x_all, y_all = boston.data, boston.target
 X_train, X_test, Y_train, Y_test = cross_validation.train_test_split(
-x, y, test_size=0.2, random_state=42)
+x_all, y_all, test_size=0.2, random_state=42)
 
 total_len = X_train.shape[0]
 
-# Parameters
+# 全局参数
 learning_rate = 0.001
 training_epochs = 500
 batch_size = 10
 display_step = 1
 dropout_rate = 0.9
-# Network Parameters
-n_hidden_1 = 32 # 1st layer number of features
-n_hidden_2 = 200 # 2nd layer number of features
+# 网络参数
+n_hidden_1 = 32 # 第一层特征数
+n_hidden_2 = 200
 n_hidden_3 = 200
 n_hidden_4 = 256
 n_input = X_train.shape[1]
