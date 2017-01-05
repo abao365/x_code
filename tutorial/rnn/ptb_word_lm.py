@@ -42,6 +42,9 @@ $ wget http://www.fit.vutbr.cz/~imikolov/rnnlm/simple-examples.tgz
 $ tar xvf simple-examples.tgz
 To run:
 $ python ptb_word_lm.py --data_path=simple-examples/data/
+
+使用指南：
+https://www.tensorflow.org/tutorials/recurrent/
 使用方法：
 $ python ptb_word_lm.py --data_path=/Users/leidelong/data/simple-examples/data/ --model small
 
