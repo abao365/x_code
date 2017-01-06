@@ -46,7 +46,7 @@ total_len = X_train.shape[0]
 # 全局参数
 learning_rate = 0.001
 training_epochs = 500
-batch_size = 100
+batch_size = 10
 display_step = 1
 dropout_rate = 0.9
 # 网络参数
@@ -66,6 +66,9 @@ y = tf.placeholder("float", [None])
 def multilayer_perceptron(x, weights, biases):
     # 定义4个隐藏层，统一使用relu激励函数
     layer_1 = tf.add(tf.matmul(x, weights['h1']), biases['b1'])
+    # tf.nn.sigmoid(layer_1)
+    # tf.nn.tanh(layer_1)
+    # layer_1 = tf.nn.relu(layer_1)
     layer_1 = tf.nn.relu(layer_1)
     layer_2 = tf.add(tf.matmul(layer_1, weights['h2']), biases['b2'])
     layer_2 = tf.nn.relu(layer_2)
@@ -99,7 +102,7 @@ biases = {
 pred = multilayer_perceptron(x, weights, biases)
 tf.transpose(pred)
 
-# 定义损失函数及优化
+# 定义损失函数及优化方法
 cost = tf.reduce_mean(tf.square(pred-y))
 optimizer = tf.train.AdamOptimizer(learning_rate=learning_rate).minimize(cost)
 
@@ -129,20 +132,28 @@ with tf.Session() as sess:
 
         # Display logs per epoch step
         if epoch % display_step == 0:
-            print ("Epoch:", '%04d' % (epoch+1), "cost=", "{:.9f}".format(avg_cost))
-            print ("[*]----------------------------")
-            for i in xrange(3):
-                print ("label value:", label_value[i], "estimated value:", estimate[i])
-            print ("[*]============================")
+
+            # 测试集测试
+            biases_value = pred - y
+            l1_square = tf.square(pred - y)
+            biases_value_avg = tf.reduce_mean(tf.cast(biases_value, "float"))
+            l1_square_avg = tf.reduce_mean(tf.cast(l1_square, "float"))
+
+            print ("Epoch:", '%04d' % (epoch+1),"[*]----------------------------")
+            print("train:biases_value_avg:", biases_value_avg.eval({x: X_train, y: Y_train}))
+            print("train:l1_square_avg:", l1_square_avg.eval({x: X_train, y: Y_train}))
+            print("test:biases_value_avg:", biases_value_avg.eval({x: X_test, y: Y_test}))
+            print("test:l1_square_avg:", l1_square_avg.eval({x: X_test, y: Y_test}))
+
+
+
+            # print ("Epoch:", '%04d' % (epoch+1), "cost=", "{:.9f}".format(avg_cost))
+            # print ("[*]----------------------------")
+            # for i in xrange(3):
+            #     print ("label value:", label_value[i], "estimated value:", estimate[i])
+            # print ("[*]============================")
 
     print ("Optimization Finished!")
 
 
 
-    # 测试集测试
-    biases_value = pred - y
-    l1_value =tf.abs(pred - y)
-    biases_value_avg = tf.reduce_mean(tf.cast(biases_value, "float"))
-    l1_value_avg = tf.reduce_mean(tf.cast(l1_value, "float"))
-    print("biases_value_avg:", biases_value_avg.eval({x: X_test, y: Y_test}))
-    print("l1_value_avg:", l1_value_avg.eval({x: X_test, y: Y_test}))
