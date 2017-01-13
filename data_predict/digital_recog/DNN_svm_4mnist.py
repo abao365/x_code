@@ -125,7 +125,7 @@ class NeuralNet(object):
         pass
 
 
-def load_mnist(dataset="training_data", digits=np.arange(10), path="/Users/leidelong/work/code/python/x_code/data_predict/digital_recog"):
+def load_mnist(dataset="training_data", digits=np.arange(10), path="/Users/leidelong/data/mnist"):
     if dataset == "training_data":
         fname_image = os.path.join(path, 'data/train-images-idx3-ubyte.gz')
         fname_label = os.path.join(path, 'data/train-labels-idx1-ubyte.gz')
