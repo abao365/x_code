@@ -61,10 +61,10 @@ model.fit(X, Y, n_epoch=1,
 # ---------------------
 
 # Manually save model
-model.save(SOURCE+"model/"+"model.tfl")
+model.save(SOURCE+"model/weights_persistence/"+"model.tfl")
 
 # Load a model
-model.load(SOURCE+"model/"+"model.tfl")
+model.load(SOURCE+"model/weights_persistence/"+"model.tfl")
 
 # Or Load a model from auto-generated checkpoint
 # >> model.load("model.tfl.ckpt-500")
