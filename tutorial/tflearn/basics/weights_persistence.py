@@ -12,6 +12,9 @@
 @time: 2017/1/14 下午4:56
 
 An example showing how to save/restore models and retrieve weights.
+
+例子：存储模型，加载模型
+
  """
 
 from __future__ import absolute_import, division, print_function
