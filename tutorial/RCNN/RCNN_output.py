@@ -25,6 +25,8 @@ from tflearn.layers.conv import conv_2d, max_pool_2d
 from tflearn.layers.normalization import local_response_normalization
 from tflearn.layers.estimator import regression
 
+
+SOURCE='/Users/leidelong/data/'
 # Load testing images
 def resize_image(in_image, new_width, new_height, out_image=None,
                  resize_mode=Image.ANTIALIAS):
@@ -142,8 +144,11 @@ if __name__ == '__main__':
     img_path = 'testimg7.jpg'
     imgs, verts = image_proposal(img_path)
     net = create_alexnet(3)
+
     model = tflearn.DNN(net)
-    model.load('fine_tune_model_save.model')
+    print("start loading model")
+    model.load(SOURCE+'model/rcnn/'+'fine_tune_model_save.model')
+    print("loading model successfully")
     svms = train_svms(train_file_folder, model)
     print("Done fitting svms")
     features = model.predict(imgs)

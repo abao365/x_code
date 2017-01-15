@@ -19,6 +19,9 @@ from tflearn.layers.conv import conv_2d, max_pool_2d
 from tflearn.layers.normalization import local_response_normalization
 from tflearn.layers.estimator import regression
 
+
+SOURCE='/Users/leidelong/data/'
+
 # 预处理图片函数：
 # 首先，读取图片，形成一个Image文件
 def load_image(img_path):
@@ -39,7 +42,7 @@ def pil_to_nparray(pil_image):
     return np.asarray(pil_image, dtype="float32")
 
 #加载数据，特征和标签分别以数组形式输出
-def load_data(datafile, num_clss, save=False, save_path='dataset.pkl'):
+def load_data(datafile, num_clss, save=False, save_path=SOURCE+'model/rcnn/'+'dataset.pkl'):
     train_list = open(datafile,'r')
     labels = []
     images = []
@@ -102,15 +105,15 @@ def create_alexnet(num_classes):
 #根据网络结构、样本集训练
 def train(network, X, Y):
     # Training
-    model = tflearn.DNN(network, checkpoint_path='model_alexnet',
+    model = tflearn.DNN(network, checkpoint_path=SOURCE+'model/rcnn/'+'model_alexnet',
                         max_checkpoints=1, tensorboard_verbose=2, tensorboard_dir='output')
-    if os.path.isfile('model_save.model'):
-    	model.load('model_save.model')
-    model.fit(X, Y, n_epoch=100, validation_set=0.1, shuffle=True,
+    if os.path.isfile(SOURCE+'model/rcnn/'+'model_save.model'):
+    	model.load(SOURCE+'model/rcnn/'+'model_save.model')
+    model.fit(X, Y, n_epoch=10, validation_set=0.1, shuffle=True,
               show_metric=True, batch_size=64, snapshot_step=200,
               snapshot_epoch=False, run_id='alexnet_oxflowers17') # epoch = 1000
     # Save the model
-    model.save('model_save.model')
+    model.save(SOURCE+'model/rcnn/'+'model_save.model')
 
 # 我们就是用这个函数来推断输入图片的类别的
 def predict(network, modelfile,images):

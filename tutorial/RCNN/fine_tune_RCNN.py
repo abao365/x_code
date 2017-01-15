@@ -23,6 +23,8 @@ from tflearn.layers.conv import conv_2d, max_pool_2d
 from tflearn.layers.normalization import local_response_normalization
 from tflearn.layers.estimator import regression
 
+SOURCE='/Users/leidelong/data/'
+
 # Use a already trained alexnet with the last layer redesigned
 # 这里定义了我们的Alexnet的fine tune框架。按照原文，我们需要丢弃alexnet的最后一层，即softmax
 # 然后换上一层新的softmax专门针对新的预测的class数+1(因为多出了个背景class)。具体方法为设
@@ -55,14 +57,14 @@ def create_alexnet(num_classes, restore=False):
 # 将训练资料收录到fine_tune_model_save.model里
 def fine_tune_Alexnet(network, X, Y):
     # Training
-    model = tflearn.DNN(network, checkpoint_path='rcnn_model_alexnet',
+    model = tflearn.DNN(network, checkpoint_path=SOURCE+'model/rcnn/'+'model_alexnet',
                         max_checkpoints=1, tensorboard_verbose=2, tensorboard_dir='output_RCNN')
-    if os.path.isfile('fine_tune_model_save.model'):
+    if os.path.isfile(SOURCE+'model/rcnn/'+'fine_tune_model_save.model'):
 	print("Loading the fine tuned model")
-    	model.load('fine_tune_model_save.model')
-    elif os.path.isfile('model_save.model'):
+    	model.load(SOURCE+'model/rcnn/'+'fine_tune_model_save.model')
+    elif os.path.isfile(SOURCE+'model/rcnn/'+'model_save.model'):
 	print("Loading the alexnet")
-	model.load('model_save.model')
+	model.load(SOURCE+'model/rcnn/'+'model_save.model')
     else:
 	print("No file to load, error")
         return False
@@ -70,18 +72,18 @@ def fine_tune_Alexnet(network, X, Y):
               show_metric=True, batch_size=64, snapshot_step=200,
               snapshot_epoch=False, run_id='alexnet_rcnnflowers2') # epoch = 1000
     # Save the model
-    model.save('fine_tune_model_save.model')
+    model.save(SOURCE+'model/rcnn/'+'fine_tune_model_save.model')
 
 if __name__ == '__main__':
-    if os.path.isfile('dataset.pkl'):
+    if os.path.isfile(SOURCE+'model/rcnn/'+'dataset.pkl'):
 	print("Loading Data")
-	X, Y = prep.load_from_pkl('dataset.pkl')
+	X, Y = prep.load_from_pkl(SOURCE+'model/rcnn/'+'dataset.pkl')
     else:
 	print("Reading Data")
     	X, Y = prep.load_train_proposals('refine_list.txt', 2, save=True)
     print("DONE")
     restore = False
-    if os.path.isfile('fine_tune_model_save.model'):
+    if os.path.isfile(SOURCE+'model/rcnn/'+'fine_tune_model_save.model'):
 	restore = True
         print("Continue training")
     net = create_alexnet(3, restore)
