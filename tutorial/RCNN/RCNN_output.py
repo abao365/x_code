@@ -179,7 +179,7 @@ if __name__ == '__main__':
 
     plt.show()
 
-
+#输出结果存储为result.png
 
 
 

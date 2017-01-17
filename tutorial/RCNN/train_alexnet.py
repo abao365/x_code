@@ -109,7 +109,7 @@ def train(network, X, Y):
                         max_checkpoints=1, tensorboard_verbose=2, tensorboard_dir='output')
     if os.path.isfile(SOURCE+'model/rcnn/'+'model_save.model'):
     	model.load(SOURCE+'model/rcnn/'+'model_save.model')
-    model.fit(X, Y, n_epoch=10, validation_set=0.1, shuffle=True,
+    model.fit(X, Y, n_epoch=100, validation_set=0.1, shuffle=True,
               show_metric=True, batch_size=64, snapshot_step=200,
               snapshot_epoch=False, run_id='alexnet_oxflowers17') # epoch = 1000
     # Save the model
