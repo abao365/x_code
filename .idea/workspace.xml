@@ -2,26 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57bc9ed8-b555-4a0b-a0ba-baaadda6a0ab" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tutorial/gbm/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tutorial/gbm/xgb_demo/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tutorial/gbm/xgb_demo/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tutorial/gbm/xgb_demo/basic_walkthrough.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tutorial/gbm/xgb_demo/boost_from_prediction.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tutorial/gbm/xgb_demo/cross_validation.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tutorial/gbm/xgb_demo/custom_objective.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tutorial/gbm/xgb_demo/evals_result.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tutorial/gbm/xgb_demo/external_memory.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tutorial/gbm/xgb_demo/gamma_regression.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tutorial/gbm/xgb_demo/generalized_linear_model.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tutorial/gbm/xgb_demo/predict_first_ntree.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tutorial/gbm/xgb_demo/predict_leaf_indices.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tutorial/gbm/xgb_demo/runall.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tutorial/gbm/xgb_demo/sklearn_evals_result.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tutorial/gbm/xgb_demo/sklearn_examples.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tutorial/gbm/xgb_demo/sklearn_parallel.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tutorial/model_contrast/gbdt_evaluation.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tutorial/model_contrast/xgboost_evaluation.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tutorial/gbm/xgb_demo/basic_walkthrough.py" afterPath="$PROJECT_DIR$/tutorial/gbm/xgb_demo/basic_walkthrough.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tutorial/gbm/xgb_demo/boost_from_prediction.py" afterPath="$PROJECT_DIR$/tutorial/gbm/xgb_demo/boost_from_prediction.py" />
     </list>
     <ignored path="x_code.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,18 +24,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="classifier_contrast.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tutorial/model_contrast/classifier_contrast.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1292">
-              <caret line="68" column="38" selection-start-line="68" selection-start-column="12" selection-end-line="68" selection-end-column="38" />
-              <folding>
-                <element signature="e#234#244#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="gbdt_evaluation.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tutorial/model_contrast/gbdt_evaluation.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -77,11 +48,53 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gbdt_evaluation.ipynb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="gbdt_evaluation.ipynb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tutorial/model_contrast/gbdt_evaluation.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
               <selected id="0" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="basic_walkthrough.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tutorial/gbm/xgb_demo/basic_walkthrough.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-152">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding>
+                <element signature="e#18#36#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="boost_from_prediction.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tutorial/gbm/xgb_demo/boost_from_prediction.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="core.py" pinned="false" current-in-tab="true">
+        <entry file="file://$USER_HOME$/Downloads/xgboost/python-package/xgboost/core.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="211">
+              <caret line="215" column="47" selection-start-line="215" selection-start-column="47" selection-end-line="215" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cross_validation.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tutorial/gbm/xgb_demo/cross_validation.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -168,6 +181,8 @@
         <option value="$PROJECT_DIR$/tutorial/model_contrast/gbdt_evaluation.py" />
         <option value="$PROJECT_DIR$/tutorial/model_contrast/gbdt_evaluation.ipynb" />
         <option value="$PROJECT_DIR$/tutorial/model_contrast/xgboost_evaluation.py" />
+        <option value="$PROJECT_DIR$/tutorial/gbm/xgb_demo/basic_walkthrough.py" />
+        <option value="$PROJECT_DIR$/tutorial/gbm/xgb_demo/boost_from_prediction.py" />
       </list>
     </option>
   </component>
@@ -247,29 +262,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="model_contrast" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="x_code" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="x_code" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tutorial" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model_contrast" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value=".ipynb_checkpoints" />
+              <option name="myItemId" value="gbm" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -288,6 +281,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="gbm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xgb_demo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -331,41 +328,7 @@
       <recent name="$PROJECT_DIR$/tutorial/RNN" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.gbdt_evaluation">
-    <configuration default="false" name="fine_tune_RCNN" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tutorial/RCNN" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="x_code" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tutorial/RCNN/fine_tune_RCNN.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="RCNN_output" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tutorial/RCNN" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="x_code" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tutorial/RCNN/RCNN_output.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.boost_from_prediction">
     <configuration default="false" name="neural_style" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -413,6 +376,40 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="x_code" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tutorial/model_contrast/gbdt_evaluation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="basic_walkthrough" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tutorial/gbm/xgb_demo" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="x_code" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tutorial/gbm/xgb_demo/basic_walkthrough.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="boost_from_prediction" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tutorial/gbm/xgb_demo" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="x_code" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tutorial/gbm/xgb_demo/boost_from_prediction.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -552,19 +549,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.fine_tune_RCNN" />
-      <item index="1" class="java.lang.String" itemvalue="Python.RCNN_output" />
-      <item index="2" class="java.lang.String" itemvalue="Python.neural_style" />
-      <item index="3" class="java.lang.String" itemvalue="Python.train_test" />
-      <item index="4" class="java.lang.String" itemvalue="Python.gbdt_evaluation" />
+      <item index="0" class="java.lang.String" itemvalue="Python.neural_style" />
+      <item index="1" class="java.lang.String" itemvalue="Python.train_test" />
+      <item index="2" class="java.lang.String" itemvalue="Python.gbdt_evaluation" />
+      <item index="3" class="java.lang.String" itemvalue="Python.basic_walkthrough" />
+      <item index="4" class="java.lang.String" itemvalue="Python.boost_from_prediction" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.gbdt_evaluation" />
-        <item index="1" class="java.lang.String" itemvalue="Python.train_test" />
-        <item index="2" class="java.lang.String" itemvalue="Python.neural_style" />
-        <item index="3" class="java.lang.String" itemvalue="Python.RCNN_output" />
-        <item index="4" class="java.lang.String" itemvalue="Python.fine_tune_RCNN" />
+        <item index="0" class="java.lang.String" itemvalue="Python.boost_from_prediction" />
+        <item index="1" class="java.lang.String" itemvalue="Python.basic_walkthrough" />
+        <item index="2" class="java.lang.String" itemvalue="Python.gbdt_evaluation" />
+        <item index="3" class="java.lang.String" itemvalue="Python.train_test" />
+        <item index="4" class="java.lang.String" itemvalue="Python.neural_style" />
       </list>
     </recent_temporary>
   </component>
@@ -592,25 +589,25 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="833" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25229034" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25229034" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32867134" sideWeight="0.49446493" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45734265" sideWeight="0.16701902" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3146853" sideWeight="0.17970401" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32867134" sideWeight="0.5968992" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32867134" sideWeight="0.4885609" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48951048" sideWeight="0.57343173" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3146853" sideWeight="0.820296" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32867134" sideWeight="0.5257223" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37062937" sideWeight="0.52008456" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.49741697" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3146853" sideWeight="0.832981" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32867134" sideWeight="0.6073801" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.49741697" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -638,39 +635,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data_predict/face_recog/yidongyingpan.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tutorial/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tutorial/mnist/cnn4mnist.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2185">
-          <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_predict/face_recog/detect_iphone.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_predict/face_recog/face_recognition.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data_predict/face_recog/face_recognition_camera.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="836">
@@ -968,6 +932,48 @@
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
           <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/xgboost/python-package/xgboost/training.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="114" column="4" selection-start-line="114" selection-start-column="4" selection-end-line="114" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tutorial/gbm/xgb_demo/cross_validation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tutorial/gbm/xgb_demo/basic_walkthrough.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-152">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="e#18#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tutorial/gbm/xgb_demo/boost_from_prediction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/xgboost/python-package/xgboost/core.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="215" column="47" selection-start-line="215" selection-start-column="47" selection-end-line="215" selection-end-column="47" />
+          <folding />
         </state>
       </provider>
     </entry>
