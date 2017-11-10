@@ -106,6 +106,7 @@ sess.run(init)
 
 for i in range(20000):
     batch_xs, batch_ys = mnist.train.next_batch(100)
+    print "batch_ys:",batch_ys
     sess.run(train_step, feed_dict={x: batch_xs, y_: batch_ys, keep_prob: 0.5})
 
     #评测代码

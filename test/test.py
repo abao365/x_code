@@ -12,15 +12,9 @@
 @time: 2017/4/7 下午7:44
 """
 
-
-def func():
-    pass
-
-
-class Main():
-    def __init__(self):
-        pass
+import numpy as np
+import keras as kr
+import pandas as pd
 
 
-if __name__ == '__main__':
-    pass
+

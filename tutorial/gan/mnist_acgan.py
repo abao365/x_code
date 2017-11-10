@@ -167,7 +167,8 @@ def load_data(path='mnist.npz'):
 if __name__ == '__main__':
 
     # batch and latent size taken from the paper
-    epochs = 50
+    # epochs = 50
+    epochs = 20
     batch_size = 100
     latent_size = 100
 

@@ -12,15 +12,37 @@
 @time: 2017/10/6 下午4:46
 """
 
+import numpy as np
+from  sklearn import  datasets
+from pandas import read_csv
 
-def func():
-    pass
+import  pandas
+
+#读取数据
+# train_url="/Users/leidelong/competition/Porto_Seguro_Safe_Driver_Prediction/train.csv"
+train_url="sample_submission.csv"
+train_data=pandas.read_csv(train_url)
 
 
-class Main():
-    def __init__(self):
-        pass
+
+import pandas as pd
+import numpy as np
+import xgboost as xgb
+from xgboost.sklearn import XGBClassifier
+from sklearn import cross_validation, metrics
+from sklearn.grid_search import GridSearchCV
+
+import matplotlib.pylab as plt
+from matplotlib.pylab import rcParams
+rcParams['figure.figsize'] = 12, 4
+
+train = pd.read_csv('/Users/leidelong/competition/Porto_Seguro_Safe_Driver_Prediction/train.csv')
+test = pd.read_csv('/Users/leidelong/competition/Porto_Seguro_Safe_Driver_Prediction/test.csv')
 
 
-if __name__ == '__main__':
-    pass
+print train.shape, test.shape
+
+target='target'
+IDcol = 'id'
+
+print train['target'].value_counts()

@@ -13,14 +13,18 @@
 """
 
 
-def func():
-    pass
+import pandas
 
+iris_df = pandas.read_csv("data/iris.csv")
 
-class Main():
-    def __init__(self):
-        pass
+from sklearn2pmml import PMMLPipeline
+from sklearn.tree import DecisionTreeClassifier
 
+iris_pipeline = PMMLPipeline([
+	("classifier", DecisionTreeClassifier())
+])
+iris_pipeline.fit(iris_df[iris_df.columns.difference(["species"])], iris_df["species"])
 
-if __name__ == '__main__':
-    pass
+from sklearn2pmml import sklearn2pmml
+
+sklearn2pmml(iris_pipeline, "model/DecisionTreeIris.pmml", with_repr = True)

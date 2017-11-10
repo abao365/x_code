@@ -93,6 +93,15 @@ for flow_index in all_flow_info.index:
         distance_mode2 = (start_flow_distance + end_flow_distance) / (s1s2 + s2e1 + e1e2)
         distance_mode3 = (start_flow_distance + end_flow_distance) / (s1s2 + s2e2 + e2e1)
 
+        start_poi_latlng = (start_flow_poi_class_center_lat, start_flow_poi_class_center_lng)
+        start_user_latlng = (start_flow_recipient_class_center_lat, start_flow_recipient_class_center_lng)
+
+        end_poi_latlng = (end_flow_poi_class_center_lat, end_flow_poi_class_center_lng)
+        end_user_latlng = (end_flow_recipient_class_center_lat,end_flow_recipient_class_center_lng)
+
+        poiclass2poiclass_distance = vincenty(start_poi_latlng, end_poi_latlng).meters
+        userclass2userclass_distance = vincenty(start_user_latlng, end_user_latlng).meters
+
         flow2flow_dict = {"start_flow_poi_class_id": start_flow_poi_class_id,
                           "start_flow_poi_class_center_lat": start_flow_poi_class_center_lat,
                           "start_flow_poi_class_center_lng": start_flow_poi_class_center_lng,
@@ -107,6 +116,9 @@ for flow_index in all_flow_info.index:
                           "end_flow_recipient_class_center_lat": end_flow_recipient_class_center_lat,
                           "end_flow_recipient_class_center_lng": end_flow_recipient_class_center_lng,
                           "end_flow_distance": end_flow_distance,
+                          "poiclass2poiclass_distance":poiclass2poiclass_distance,
+                          "userclass2userclass_distance": userclass2userclass_distance,
+
                           "distance_mode1": distance_mode1,
                           "distance_mode2": distance_mode2,
                           "distance_mode3": distance_mode3

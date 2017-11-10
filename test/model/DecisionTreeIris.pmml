@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PMML xmlns="http://www.dmg.org/PMML-4_3" version="4.3">
+	<Header>
+		<Application name="JPMML-SkLearn" version="1.3.9"/>
+		<Timestamp>2017-10-06T08:53:12Z</Timestamp>
+	</Header>
+	<MiningBuildTask>
+		<Extension>PMMLPipeline(steps=[('classifier', DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_split=1e-07, min_samples_leaf=1,
+            min_samples_split=2, min_weight_fraction_leaf=0.0,
+            presort=False, random_state=None, splitter='best'))])</Extension>
+	</MiningBuildTask>
+	<DataDictionary>
+		<DataField name="species" optype="categorical" dataType="string">
+			<Value value="setosa"/>
+			<Value value="versicolor"/>
+			<Value value="virginica"/>
+		</DataField>
+		<DataField name="petal_length" optype="continuous" dataType="float"/>
+		<DataField name="petal_width" optype="continuous" dataType="float"/>
+		<DataField name="sepal_length" optype="continuous" dataType="float"/>
+	</DataDictionary>
+	<TransformationDictionary>
+		<DerivedField name="double(petal_length)" optype="continuous" dataType="double">
+			<FieldRef field="petal_length"/>
+		</DerivedField>
+		<DerivedField name="double(petal_width)" optype="continuous" dataType="double">
+			<FieldRef field="petal_width"/>
+		</DerivedField>
+		<DerivedField name="double(sepal_length)" optype="continuous" dataType="double">
+			<FieldRef field="sepal_length"/>
+		</DerivedField>
+	</TransformationDictionary>
+	<TreeModel functionName="classification" splitCharacteristic="binarySplit">
+		<MiningSchema>
+			<MiningField name="species" usageType="target"/>
+			<MiningField name="petal_length"/>
+			<MiningField name="petal_width"/>
+			<MiningField name="sepal_length"/>
+		</MiningSchema>
+		<Output>
+			<OutputField name="probability(setosa)" optype="continuous" dataType="double" feature="probability" value="setosa"/>
+			<OutputField name="probability(versicolor)" optype="continuous" dataType="double" feature="probability" value="versicolor"/>
+			<OutputField name="probability(virginica)" optype="continuous" dataType="double" feature="probability" value="virginica"/>
+		</Output>
+		<Node id="1">
+			<True/>
+			<Node id="2" score="setosa" recordCount="50.0">
+				<SimplePredicate field="double(petal_length)" operator="lessOrEqual" value="2.450000047683716"/>
+				<ScoreDistribution value="setosa" recordCount="50.0"/>
+				<ScoreDistribution value="versicolor" recordCount="0.0"/>
+				<ScoreDistribution value="virginica" recordCount="0.0"/>
+			</Node>
+			<Node id="3">
+				<SimplePredicate field="double(petal_length)" operator="greaterThan" value="2.450000047683716"/>
+				<Node id="4">
+					<SimplePredicate field="double(petal_width)" operator="lessOrEqual" value="1.75"/>
+					<Node id="5">
+						<SimplePredicate field="double(petal_length)" operator="lessOrEqual" value="4.949999809265137"/>
+						<Node id="6" score="versicolor" recordCount="47.0">
+							<SimplePredicate field="double(petal_width)" operator="lessOrEqual" value="1.6500000953674316"/>
+							<ScoreDistribution value="setosa" recordCount="0.0"/>
+							<ScoreDistribution value="versicolor" recordCount="47.0"/>
+							<ScoreDistribution value="virginica" recordCount="0.0"/>
+						</Node>
+						<Node id="7" score="virginica" recordCount="1.0">
+							<SimplePredicate field="double(petal_width)" operator="greaterThan" value="1.6500000953674316"/>
+							<ScoreDistribution value="setosa" recordCount="0.0"/>
+							<ScoreDistribution value="versicolor" recordCount="0.0"/>
+							<ScoreDistribution value="virginica" recordCount="1.0"/>
+						</Node>
+					</Node>
+					<Node id="8">
+						<SimplePredicate field="double(petal_length)" operator="greaterThan" value="4.949999809265137"/>
+						<Node id="9" score="virginica" recordCount="3.0">
+							<SimplePredicate field="double(petal_width)" operator="lessOrEqual" value="1.5499999523162842"/>
+							<ScoreDistribution value="setosa" recordCount="0.0"/>
+							<ScoreDistribution value="versicolor" recordCount="0.0"/>
+							<ScoreDistribution value="virginica" recordCount="3.0"/>
+						</Node>
+						<Node id="10">
+							<SimplePredicate field="double(petal_width)" operator="greaterThan" value="1.5499999523162842"/>
+							<Node id="11" score="versicolor" recordCount="2.0">
+								<SimplePredicate field="double(petal_length)" operator="lessOrEqual" value="5.449999809265137"/>
+								<ScoreDistribution value="setosa" recordCount="0.0"/>
+								<ScoreDistribution value="versicolor" recordCount="2.0"/>
+								<ScoreDistribution value="virginica" recordCount="0.0"/>
+							</Node>
+							<Node id="12" score="virginica" recordCount="1.0">
+								<SimplePredicate field="double(petal_length)" operator="greaterThan" value="5.449999809265137"/>
+								<ScoreDistribution value="setosa" recordCount="0.0"/>
+								<ScoreDistribution value="versicolor" recordCount="0.0"/>
+								<ScoreDistribution value="virginica" recordCount="1.0"/>
+							</Node>
+						</Node>
+					</Node>
+				</Node>
+				<Node id="13">
+					<SimplePredicate field="double(petal_width)" operator="greaterThan" value="1.75"/>
+					<Node id="14">
+						<SimplePredicate field="double(petal_length)" operator="lessOrEqual" value="4.850000381469727"/>
+						<Node id="15" score="versicolor" recordCount="1.0">
+							<SimplePredicate field="double(sepal_length)" operator="lessOrEqual" value="5.949999809265137"/>
+							<ScoreDistribution value="setosa" recordCount="0.0"/>
+							<ScoreDistribution value="versicolor" recordCount="1.0"/>
+							<ScoreDistribution value="virginica" recordCount="0.0"/>
+						</Node>
+						<Node id="16" score="virginica" recordCount="2.0">
+							<SimplePredicate field="double(sepal_length)" operator="greaterThan" value="5.949999809265137"/>
+							<ScoreDistribution value="setosa" recordCount="0.0"/>
+							<ScoreDistribution value="versicolor" recordCount="0.0"/>
+							<ScoreDistribution value="virginica" recordCount="2.0"/>
+						</Node>
+					</Node>
+					<Node id="17" score="virginica" recordCount="43.0">
+						<SimplePredicate field="double(petal_length)" operator="greaterThan" value="4.850000381469727"/>
+						<ScoreDistribution value="setosa" recordCount="0.0"/>
+						<ScoreDistribution value="versicolor" recordCount="0.0"/>
+						<ScoreDistribution value="virginica" recordCount="43.0"/>
+					</Node>
+				</Node>
+			</Node>
+		</Node>
+	</TreeModel>
+</PMML>
