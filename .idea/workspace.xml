@@ -2,34 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57bc9ed8-b555-4a0b-a0ba-baaadda6a0ab" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tutorial/word2vec/pro2/.ipynb_checkpoints/Untitled-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tutorial/word2vec/pro2/Untitled.ipynb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/competition/Safe_Driver_Prediction/sample_submission.csv" afterPath="$PROJECT_DIR$/competition/Safe_Driver_Prediction/sample_submission.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/competition/Safe_Driver_Prediction/train.py" afterPath="$PROJECT_DIR$/competition/Safe_Driver_Prediction/train.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/data/iris.csv" afterPath="$PROJECT_DIR$/test/data/iris.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/sklearn_pipeline_pmml.py" afterPath="$PROJECT_DIR$/test/sklearn_pipeline_pmml.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/sklearn_pmml.py" afterPath="$PROJECT_DIR$/test/sklearn_pmml.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test.py" afterPath="$PROJECT_DIR$/test/test.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tutorial/RL/hillclimbing.py" afterPath="$PROJECT_DIR$/tutorial/RL/hillclimbing.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tutorial/auto_encoder/AdditiveGaussianNoiseAutoencoderRunner.py" afterPath="$PROJECT_DIR$/tutorial/auto_encoder/AdditiveGaussianNoiseAutoencoderRunner.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tutorial/auto_encoder/autoencoder_models/Autoencoder.py" afterPath="$PROJECT_DIR$/tutorial/auto_encoder/autoencoder_models/Autoencoder.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tutorial/auto_encoder/autoencoder_models/DenoisingAutoencoder.py" afterPath="$PROJECT_DIR$/tutorial/auto_encoder/autoencoder_models/DenoisingAutoencoder.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tutorial/auto_encoder/autoencoder_models/VariationalAutoencoder.py" afterPath="$PROJECT_DIR$/tutorial/auto_encoder/autoencoder_models/VariationalAutoencoder.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tutorial/gan/mnist_acgan.py" afterPath="$PROJECT_DIR$/tutorial/gan/mnist_acgan.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tutorial/gbm/xgb_competition/XGBoost_models.ipynb" afterPath="$PROJECT_DIR$/tutorial/gbm/xgb_competition/XGBoost_models.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tutorial/mnist/cnn4mnist.py" afterPath="$PROJECT_DIR$/tutorial/mnist/cnn4mnist.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tutorial/mnist/softmax4mnist.py" afterPath="$PROJECT_DIR$/tutorial/mnist/softmax4mnist.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tutorial/rnn/airline_dnn.py" afterPath="$PROJECT_DIR$/tutorial/rnn/airline_dnn.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tutorial/rnn/airline_lstm.py" afterPath="$PROJECT_DIR$/tutorial/rnn/airline_lstm.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tutorial/rnn/airline_multiinput_dnn.py" afterPath="$PROJECT_DIR$/tutorial/rnn/airline_multiinput_dnn.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tutorial/rnn/alphabet_lstm.py" afterPath="$PROJECT_DIR$/tutorial/rnn/alphabet_lstm.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tutorial/rnn/imdb_lstm.py" afterPath="$PROJECT_DIR$/tutorial/rnn/imdb_lstm.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tutorial/rnn/recurrent_network.py" afterPath="$PROJECT_DIR$/tutorial/rnn/recurrent_network.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tutorial/word2vec/pro2/.ipynb_checkpoints/poi_graph_visualization-checkpoint.ipynb" afterPath="$PROJECT_DIR$/tutorial/word2vec/pro2/.ipynb_checkpoints/poi_graph_visualization-checkpoint.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tutorial/word2vec/pro2/flow2flow_packageRate.py" afterPath="$PROJECT_DIR$/tutorial/word2vec/pro2/flow2flow_packageRate.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tutorial/word2vec/pro2/waybillflow_group.py" afterPath="$PROJECT_DIR$/tutorial/word2vec/pro2/waybillflow_group.py" />
     </list>
     <ignored path="x_code.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,7 +25,7 @@
       <file leaf-file-name="waybillflow_group.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tutorial/word2vec/pro2/waybillflow_group.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
+            <state relative-caret-position="435">
               <caret line="79" column="140" selection-start-line="79" selection-start-column="140" selection-end-line="79" selection-end-column="140" />
               <folding>
                 <element signature="e#318#337#0" expanded="true" />
@@ -64,7 +37,7 @@
       <file leaf-file-name="flow2flow_packageRate.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tutorial/word2vec/pro2/flow2flow_packageRate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
+            <state relative-caret-position="1605">
               <caret line="107" column="56" selection-start-line="107" selection-start-column="27" selection-end-line="107" selection-end-column="56" />
               <folding />
             </state>
@@ -74,7 +47,7 @@
       <file leaf-file-name="preprosess_wabillflowlist.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tutorial/word2vec/pro2/preprosess_wabillflowlist.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
+            <state relative-caret-position="720">
               <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
               <folding>
                 <element signature="e#323#342#0" expanded="true" />
@@ -98,7 +71,7 @@
       <file leaf-file-name="waybillflow_word2vec.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tutorial/word2vec/pro2/waybillflow_word2vec.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
+            <state relative-caret-position="600">
               <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
               <folding />
             </state>
@@ -276,6 +249,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -308,64 +283,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="x_code" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="x_code" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tutorial" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="word2vec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="x_code" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="x_code" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tutorial" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="word2vec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pro2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="x_code" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="x_code" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -659,25 +578,25 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="47" y="52" width="1354" height="804" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2348087" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2348087" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32867134" sideWeight="0.49446493" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32867134" sideWeight="0.46857598" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32867134" sideWeight="0.4885609" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48811188" sideWeight="0.57343173" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31195337" sideWeight="0.67653275" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23760933" sideWeight="0.53142405" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1341108" sideWeight="0.53142405" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31195337" sideWeight="0.4947146" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31195337" sideWeight="0.67653275" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32507288" sideWeight="0.5968992" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31195337" sideWeight="0.4947146" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32867134" sideWeight="0.49446493" order="6" side_tool="false" content_ui="tabs" />
@@ -1024,7 +943,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tutorial/word2vec/pro2/waybillflow_word2vec.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
+        <state relative-caret-position="600">
           <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
           <folding />
         </state>
@@ -1032,7 +951,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tutorial/word2vec/pro2/preprosess_wabillflowlist.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
+        <state relative-caret-position="720">
           <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding>
             <element signature="e#323#342#0" expanded="true" />
@@ -1042,7 +961,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tutorial/word2vec/pro2/flow2flow_packageRate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
+        <state relative-caret-position="1605">
           <caret line="107" column="56" selection-start-line="107" selection-start-column="27" selection-end-line="107" selection-end-column="56" />
           <folding />
         </state>
@@ -1050,7 +969,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tutorial/word2vec/pro2/waybillflow_group.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
+        <state relative-caret-position="435">
           <caret line="79" column="140" selection-start-line="79" selection-start-column="140" selection-end-line="79" selection-end-column="140" />
           <folding>
             <element signature="e#318#337#0" expanded="true" />
